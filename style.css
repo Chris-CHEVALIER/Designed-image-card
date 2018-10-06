@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "ChampagneBold";
+    src: url("fonts/champagne/ChampagneBold.ttf");
+}
+
+@font-face {
+    font-family: "Champagne";
+    src: url("fonts/champagne/Champagne.ttf");
+}
+
+.card {
+    left: 50%;
+    transform: translate(-50%, 35%);
+    width: 35%;
+    ébox-shadow: 10px 10px 50px #aaaaaa;
+}
+
+.middle {
+    position: absolute;
+    top: 15%;
+    margin-left: 8%;
+}
+
+.card-image:hover .pic {
+    opacity: 0.5;
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.card-image:hover .text {
+    opacity: 1;
+}
+
+.text {
+    opacity: 0;
+    font-family: "Champagne";
+    color: black;
+    font-size: large;
+}
+
+.titre {
+    text-transform: uppercase;
+    font-family: "ChampagneBold";
+    text-align: center;
+    color: rgb(128, 127, 127);
+    font-size: 25px;
+    letter-spacing: 7px;
+}
+
+.pic {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
